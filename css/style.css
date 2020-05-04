@@ -1,0 +1,141 @@
+﻿html {
+	box-sizing: border-box;
+	background-image: linear-gradient(to bottom, #C2E9FB, #A1C4FD);
+	font-family: 'helvetica neue';
+	font-size: 20px;
+	font-weight: 200;
+	text-align: center;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+header h1 {
+	color: #1f3fa1;
+	font-weight: 300;
+	font-size: 3em;
+	text-transform: uppercase;
+	margin: 2em 0 1em 0;
+	padding: 1em;
+}
+
+header h3 {
+	color: #75afff;
+	padding-top: 1.75em;
+}
+
+.topnav {
+	display: flex;
+	justify-content: center;
+}
+
+input {
+	width: 100%;
+	padding: 20px;
+}
+
+.search-form {
+	max-width: 300px;
+	margin: 50px auto;
+}
+
+input.search {
+	margin: 0;
+	text-align: center;
+	outline: 0;
+	border: 2px solid #F7F7F7;
+	position: relative;
+	z-index: 2;
+	border-radius: 20px;
+	width: 200px;
+	height: 20px;
+	font-size: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+input.date {
+	margin: 0;
+	text-align: center;
+	outline: 0;
+	border: 2px solid #F7F7F7;
+	position: relative;
+	z-index: 2;
+	width: 200px;
+	height: 20px;
+	font-size: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+span.population {
+	font-size: 15px;
+}
+
+.hl {
+	background: #3c6fcf;
+}
+
+h2 {
+	padding-top: 1em ;
+}
+
+.logo {
+	display: grid;
+	justify-items: center; 
+	padding-top: 2em;
+}
+
+img {
+	max-width: 70%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5em;
+}
+
+article {
+	background: #edf9ff;
+	border-radius: 10px;
+	margin: 1em;
+}
+
+.content {
+	justify-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+#range {
+	position: relative;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#date {
+	margin-bottom: 5em;
+}
+
+@media screen and (min-width: 48em) {  
+	body {  
+		margin: 0 auto;
+	}
+	.col-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 1em;
+		margin: 0 auto;
+		padding: 0;
+	}
+	input.search {
+		width: 300px;
+		height: 50px;
+	}
+	input.date {
+		width: 300px;
+		height: 50px;
+	}
+	article {
+		width: 500px;
+	}
+}
